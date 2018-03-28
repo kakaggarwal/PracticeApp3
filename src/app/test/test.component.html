@@ -1,0 +1,15 @@
+<h2>Welcome {{name}}!!</h2>
+<!-- <h3 class="text-success text-italic">{{ greetUser() }}</h3> -->
+<h4 bind-class="successClass">{{ siteUrl }}</h4>
+<h5 class="text-success text-italic" bind-class="successClass">{{ type }} The text in this tag is not italic, hence we can either use property binding with class or simple class at once in a html tag.</h5>
+<h2 [class.text-danger]="hasError">Has Error?</h2>
+<h2 [ngClass]="classes">Is Special ?</h2>
+<h2 [style.color]="'blue'">Style Binding</h2>
+<h2 [style.color]="hasError ? 'red' : 'green'">Style Binding 2</h2>
+<h2 [style.color]="styleBindColor">Style Binding 3</h2>
+<h2 [ngStyle]="styles">Style Binding 4</h2>
+<input [id]="myId" type="text" [(ngModel)]="name" />
+<input bind-id="myId" type="text" value="Vishwas" [disabled]="isDisabled" />
+
+<button (click)="greetUser($event)">Greet</button>
+<button (click)="name='greet 2 clicked'">Greet 2</button>

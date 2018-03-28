@@ -1,0 +1,15 @@
+.text-success {
+    color: green;
+}
+
+.text-danger {
+    color: red;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-center {
+    text-align: center;
+}
